@@ -1,0 +1,23 @@
+{
+  "name": "server-app",
+  "main": "index.js",
+  "type": "module",
+  "pear": {
+    "name": "server-app",
+    "type": "terminal"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "brittle": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "pear dev",
+    "test": "brittle test/*.test.js"
+  },
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.3.2",
+    "b4a": "^1.6.6",
+    "bare-process": "^2.2.0",
+    "hyperdht": "^6.15.3"
+  }
+}
