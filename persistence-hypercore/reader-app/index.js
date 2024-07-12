@@ -5,7 +5,7 @@ import path from 'bare-path'
 const swarm = new Hyperswarm()
 Pear.teardown(() => swarm.destroy())
 
-const core = new Hypercore(path.join(Pear.config.storage, 'reader-storage2'), Pear.config.args[0])
+const core = new Hypercore(path.join(Pear.config.storage, 'reader-storage'), Pear.config.args[0])
 await core.ready()
 
 const foundPeers = core.findingPeers()
