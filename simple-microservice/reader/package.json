@@ -1,0 +1,25 @@
+{
+  "name": "client",
+  "main": "index.js",
+  "type": "module",
+  "pear": {
+    "name": "client",
+    "type": "terminal"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "brittle": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "pear dev",
+    "test": "brittle test/*.test.js"
+  },
+  "dependencies": {
+    "b4a": "^1.6.6",
+    "bare-process": "^2.2.0",
+    "hyperbee": "^2.19.7",
+    "hypercore": "^10.37.10",
+    "hyperdht": "^6.15.4",
+    "hyperswarm": "^4.8.0"
+  }
+}
